@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hyman="http://schemas.android.com/apk/res/qqlog.qq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.qqslidingmenu.SlidingMenu
+        android:id="@+id/id_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_frame_background"
+        hyman:rightPadding="80dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/left_menu" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/line_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundbeautify4"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="33dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="10"
+                                android:background="@drawable/edittextbeautify3" >
+
+                                <ImageView
+                                    android:id="@+id/imageView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/searchlabel" />
+
+                                <EditText
+                                    android:id="@+id/editText1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@drawable/edittextbeautify3"
+                                    android:inputType="textPersonName"
+                                    android:textColorHint="#20000000"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/button_cancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:text="取消"
+                                android:textColor="#00BFFF"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line_show"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:background="@android:color/white" >
+
+                            <ImageButton
+                                android:id="@+id/imagebutton1"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/qqlog5" />
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="52dp"
+                                android:layout_centerInParent="true" >
+
+                                <RelativeLayout
+                                    android:id="@+id/relativelayout1"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:visibility="gone" >
+
+                                    <Button
+                                        android:id="@+id/button1"
+                                        style="?android:attr/buttonStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@android:color/transparent"
+                                        android:text="联系人"
+                                        android:textColor="#00BFFF"
+                                        android:textSize="17sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/relativelayout2"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent" >
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="50dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:orientation="horizontal" >
+
+                                        <Button
+                                            android:id="@+id/btnmessage"
+                                            style="?android:attr/buttonStyleSmall"
+                                            android:layout_width="50dp"
+                                            android:layout_height="30dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/btnbeautify2"
+                                            android:text="消息"
+                                            android:textColor="#00BFFF"
+                                            android:textSize="12sp" />
+
+                                        <Button
+                                            android:id="@+id/btnphone"
+                                            style="?android:attr/buttonStyleSmall"
+                                            android:layout_width="50dp"
+                                            android:layout_height="30dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/btnbeautify3"
+                                            android:text="电话"
+                                            android:textColor="#00BFFF"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/relativelayout3"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:visibility="gone" >
+
+                                    <Button
+                                        android:id="@+id/btndt"
+                                        style="?android:attr/buttonStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@android:color/transparent"
+                                        android:text="动态"
+                                        android:textColor="#00BFFF"
+                                        android:textSize="17sp" />
+                                </RelativeLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="52dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp" >
+
+                                <Button
+                                    android:id="@+id/button2"
+                                    style="?android:attr/buttonStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@android:color/transparent"
+                                    android:text="添加"
+                                    android:textColor="#00BFFF"
+                                    android:textSize="17sp"
+                                    android:visibility="gone" />
+
+                                <Button
+                                    android:id="@+id/btnadd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/qqlog11" />
+
+                                <Button
+                                    android:id="@+id/btnmore"
+                                    style="?android:attr/buttonStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@android:color/transparent"
+                                    android:text="更多"
+                                    android:textColor="#00BFFF"
+                                    android:textSize="17sp"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+                        </RelativeLayout>
+
+                        <FrameLayout
+                            android:id="@+id/realtabcontent"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1" />
+
+                        <android.support.v4.app.FragmentTabHost
+                            android:id="@android:id/tabhost"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/backgroundbeautify3" >
+
+                            <FrameLayout
+                                android:id="@android:id/tabcontent"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="0" />
+                        </android.support.v4.app.FragmentTabHost>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <View
+                    android:id="@+id/ViewBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#33000000" >
+                </View>
+            </FrameLayout>
+        </LinearLayout>
+    </com.qqslidingmenu.SlidingMenu>
+
+</LinearLayout>

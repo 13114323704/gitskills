@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QQ</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="register">我已阅读并同意使用条款和隐私政策</string>
+	<string name="tip">提示</string>
+	<string name="welcome">欢迎登陆HQ</string>
+</resources>

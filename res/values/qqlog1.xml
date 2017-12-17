@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        
+    	
+        <item>创建讨论组</item>
+        <item>加好友 </item>
+        <item>扫一扫</item>
+        <item>发送到电脑</item>
+        <item>面对面快传</item>
+        <item>付款</item>
+    </string-array>
+</resources>
